@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "keskonmange",
+    "slug": "keskonmange",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+
+    "description": "Identifiez les plats que vous mangez !",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Prenez une photo de votre plat pour l'identifier",
+        "NSPhotoLibraryUsageDescription": "Charger une image d'un de vos plats"
+      },
+      "bundleIdentifier": "com.keskonmange"
+    },
+    "android": {
+      "package": "com.keskonmange",
+      "versionCode": 2 ,
+      "permissions": [
+        "CAMERA"
+        ,"CAMERA_ROLL"
+      ]
+    }
+  }
+}
